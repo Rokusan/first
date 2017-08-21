@@ -63,13 +63,24 @@ console.log(total);
 
 
 // Calculate the Average
+var numbers = [2, 6, 9, 10, 7, 4, 1, 9];
+
 function averageNumbers(array) {
+
+    var average = 0;
+    for (i = 0; i < array.length; i++) {
+        average += array[i];
+    }
+
+    var w = average / array.length;
+
+    return w;
 
 }
 
-var numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 var average = averageNumbers(numbers);
 console.log(average);
+
 
 // Array of Strings
 function averageWordLength(array) {
