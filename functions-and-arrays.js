@@ -1,7 +1,19 @@
 // Find the maximum
 function maxOfTwoNumbers(first, second) {
-    // enter code jvnfkvhrglbhvkrli
+
+
+    if (first < second) {
+        var largest = second;
+    } else {
+        var largest = first;
+    }
+
+    return largest;
+
 }
+var largest = maxOfTwoNumbers(2, 6);
+console.log(largest);
+
 
 var largest = maxOfTwoNumbers(2, 6);
 console.log(largest);
