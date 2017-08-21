@@ -46,13 +46,21 @@ console.log(longest);
 
 
 // Calculating a Sum
+var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+
 function sumArray(array) {
 
+    var totalll = 0;
+    for (i = 0; i < array.length; i++) {
+        totalll += array[i];
+    }
+
+    return totalll;
 }
 
-var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 var total = sumArray(numbers);
 console.log(total);
+
 
 // Calculate the Average
 function averageNumbers(array) {
