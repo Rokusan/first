@@ -83,10 +83,6 @@ console.log(average);
 
 
 // Array of Strings
-function averageWordLength(array) {
-
-}
-
 var words = [
     "seat",
     "correspond",
@@ -99,8 +95,32 @@ var words = [
     "fuel",
     "palace"
 ];
+
+
+function averageWordLength(array) {
+
+    var averageLength = 0;
+
+    for (i = 0; i < array.length; i++) {
+        console.log(array[i]);
+
+        for (k = 0; k < array[i].length; k++) {
+            averageLength += array[i][k].length;
+            //console.log(k);
+            console.log(array[i][k].length);
+
+        }
+    }
+    var z = averageLength / array.length;
+
+    return z;
+}
+
+
+
 var averageLength = averageWordLength(words);
 console.log(averageLength);
+
 
 // Unique Arrays
 function uniquifyArray(array) {
