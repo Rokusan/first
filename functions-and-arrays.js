@@ -15,25 +15,35 @@ var largest = maxOfTwoNumbers(2, 6);
 console.log(largest);
 
 
-var largest = maxOfTwoNumbers(2, 6);
-console.log(largest);
 
 // Finding Longest Word
-function findLongestWord(words) {
-
-}
-
 var words = [
     "mystery",
-    "brother",
+    "brothers",
     "aviator",
     "crocodile",
     "pearl",
     "orchard",
     "crackpot"
 ];
+
+function findLongestWord(words) {
+
+    var longest = "";
+
+    for (i = 0; i < words.length; i++) {
+        if (words[i].length > longest.length) {
+            longest = words[i];
+        }
+    }
+    return longest;
+
+}
+
 var longest = findLongestWord(words);
 console.log(longest);
+// crocodile
+
 
 // Calculating a Sum
 function sumArray(array) {
